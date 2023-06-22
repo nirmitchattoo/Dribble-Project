@@ -1,3 +1,4 @@
+import 'package:finance_mobile_application_design/utils/routes.dart';
 import 'package:finance_mobile_application_design/widgets/customGraphic.dart';
 import 'package:finance_mobile_application_design/widgets/loginButton.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class TransactionPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back),
           color: Colors.black,
           onPressed: () {
-            // Handle go back
+            Navigator.pushNamed(context, MyRoutes.overviewPage);
           },
         ),
         actions: [
@@ -153,11 +154,11 @@ class TransactionPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 120,),
+              SizedBox(height: 25,),
       
               CustomGraphicWidget(),
       
-              SizedBox(height: 180,),
+              SizedBox(height: 20,),
       
               LoginButton(text: "See Details", onPressed: (){})
               

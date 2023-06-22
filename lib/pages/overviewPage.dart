@@ -1,3 +1,4 @@
+import 'package:finance_mobile_application_design/utils/colors.dart';
 import 'package:finance_mobile_application_design/widgets/overviewCard.dart';
 import 'package:flutter/material.dart';
 
@@ -175,7 +176,7 @@ class _OverviewPageState extends State<OverviewPage> {
       top: Radius.circular(20),
     ),
     child: BottomNavigationBar(
-      backgroundColor: Colors.transparent,
+      backgroundColor: PaletteColor.scaffoldBackgroundColor,
       elevation: 0,
       selectedItemColor: Colors.white,
       unselectedItemColor: Colors.black,
@@ -186,7 +187,7 @@ class _OverviewPageState extends State<OverviewPage> {
           icon: AnimatedContainer(
             duration: Duration(milliseconds: 200),
             decoration: BoxDecoration(
-              color: _selectedIndex == 0 ? Colors.blue : Colors.transparent,
+              color: _selectedIndex == 0 ? PaletteColor.CircleColor : Colors.transparent,
               borderRadius: BorderRadius.circular(4.0),
             ),
             child: Icon(
@@ -201,7 +202,7 @@ class _OverviewPageState extends State<OverviewPage> {
           icon: AnimatedContainer(
             duration: Duration(milliseconds: 200),
             decoration: BoxDecoration(
-              color: _selectedIndex == 1 ? Colors.blue : Colors.transparent,
+              color: _selectedIndex == 1 ? PaletteColor.CircleColor : Colors.transparent,
               borderRadius: BorderRadius.circular(4.0),
             ),
             child: Icon(
@@ -216,7 +217,7 @@ class _OverviewPageState extends State<OverviewPage> {
           icon: AnimatedContainer(
             duration: Duration(milliseconds: 200),
             decoration: BoxDecoration(
-              color: _selectedIndex == 2 ? Colors.blue : Colors.transparent,
+              color: _selectedIndex == 2 ? PaletteColor.CircleColor : Colors.transparent,
               borderRadius: BorderRadius.circular(4.0),
             ),
             child: Icon(
@@ -232,7 +233,7 @@ class _OverviewPageState extends State<OverviewPage> {
             
             duration: Duration(milliseconds: 200),
             decoration: BoxDecoration(
-              color: _selectedIndex == 3 ? Colors.blue : Colors.transparent,
+              color: _selectedIndex == 3 ? PaletteColor.CircleColor : Colors.transparent,
               borderRadius: BorderRadius.circular(4.0),
             ),
             child: Icon(
@@ -248,7 +249,7 @@ class _OverviewPageState extends State<OverviewPage> {
 
             duration: Duration(milliseconds: 200),
             decoration: BoxDecoration(
-              color: _selectedIndex == 4 ? Colors.blue : Colors.transparent,
+              color: _selectedIndex == 4 ? PaletteColor.CircleColor : Colors.transparent,
               borderRadius: BorderRadius.circular(8.0),
             ),
             child: Icon(
